@@ -1,0 +1,74 @@
+/***** RESET *****/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/*font-size: 100%;
+	vertical-align: baseline;*/
+	
+}
+html, body {height:100%;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;} 
+textarea {overflow:auto;}
+
+/***** RESET *****/
+
+
+body{
+background-image:url(https://images.bjk.com.tr/media/taraftar_media/taraftar-4787841375e419c44944ef.jpg);
+background-repeat: no-repeat;
+/* background-position: center; */
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+backdrop-filter:blur(100px) ;
+
+}
+
+.loading{
+    font-size: 34px;
+    color: white;
+    border: 1px solid white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.loading.inactive{
+  font-size: 34px;
+  color: white;
+display: none;
+}
+
+
+
+
+@keyframes blur-transition {
+    from {
+      backdrop-filter: blur(100px);
+    }
+    
+    to {
+      backdrop-filter: blur(0px);
+    }
+  }
+  
+  @keyframes opacity-transition {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }

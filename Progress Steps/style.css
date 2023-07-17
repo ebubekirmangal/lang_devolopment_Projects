@@ -1,0 +1,117 @@
+/***** RESET *****/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/*font-size: 100%;
+	vertical-align: baseline;*/
+	
+}
+html, body {height:100%;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;} 
+textarea {overflow:auto;}
+
+/***** RESET *****/
+
+body{
+    background-color: rgb(230, 232, 234);
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mainContainer{
+    text-align: center;
+}
+
+
+
+.progress-step::before{
+    content: ' ';
+    position: absolute;
+    background-color: rgb(162, 162, 164);
+    height: 4px;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: -11;
+   }
+
+
+.progress-step{
+display: flex;
+justify-content: space-between;
+position: relative;
+margin-bottom: 30px;
+width: 350px;
+max-width: 100%;
+}
+
+.progress{
+ position: absolute;
+ background-color: rgb(12, 64, 194);
+ height: 4px;
+ top: 50%;
+ width: 0%;
+ transform: translateY(-50%);
+ z-index: -11;
+ transition: 0.4s ease;
+}
+
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(162, 162, 164);
+    
+}
+
+.circle.active{
+
+    border-color: rgb(12, 64, 194) ;
+}
+
+.btn{
+    border: 0;
+    background-color:  rgb(12, 64, 194);
+    color: white;
+    position: relative;
+    padding: 8px 30px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:active{
+        transform:scale(0.98);
+}
+
+.btn:focus{
+    outline-color: blue;
+    outline-width: 2px;
+    outline-style: solid;
+}
+
+.btn:disabled{
+    background-color: rgb(208, 208, 208);
+    cursor: not-allowed;
+    transform: scale(0.98);
+   
+}
+
+
+
+
+
