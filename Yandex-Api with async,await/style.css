@@ -1,0 +1,101 @@
+/***** RESET *****/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/*font-size: 100%;
+	vertical-align: baseline;*/
+	
+}
+html, body {height:100%;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;} 
+textarea {overflow:auto;}
+
+/***** RESET *****/
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+}
+
+.bigContain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 54vw;
+}
+
+.upContain,.downContain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45vh;
+    width: 25vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.label{
+     display:block;
+     margin-bottom: 4px;
+}
+
+#firstSection, #secSection,#but{
+    width: 15vw;
+    height:35px;
+    border: 0px;
+    border-top: 1px solid rgb(156, 155, 155);
+    border-right: 1px solid rgb(119, 118, 118);
+}
+
+#firstSection:focus, #secSection:focus,#but:focus{
+    border: 0px;
+    border-bottom: 1px solid rgb(156, 155, 155);
+    border-left: 1px solid rgb(119, 118, 118);
+    outline: 0;
+}
+#but{
+
+    display: block;
+    background-color: red;
+    color: #fefefe;
+    transform: scale(1);
+}
+
+#but:focus{
+    transform: scale(0.98);
+}
+
+.turkDiv, .chooseDiv{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 22.5vh;
+}
+
+img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.flag{
+    width: 5rem;
+    height: 5rem;
+    align-items: flex-start;
+}
+
+.text, .translateText{
+height: 20vh;
+border: 2px solid rgb(156, 155, 155);
+border-radius: 10px;
+}
