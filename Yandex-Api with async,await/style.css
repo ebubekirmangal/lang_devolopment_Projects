@@ -25,6 +25,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #fefefe;
+    background: linear-gradient(to right, rgb(219, 217, 217), rgb(186, 245, 186));
 }
 
 .bigContain{
@@ -38,11 +39,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 50vh;
     width: 37vw;
     border: 1px solid black;
     border-radius: 10px;
     padding: 15px;
+    box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.5)
 }
 
 .label{
@@ -82,6 +85,8 @@ body{
     justify-content: space-between;
     height: 22.5vh;
     width: 30vw;
+    text-align: center;
+    
 }
 .turkDiv{
     margin-bottom: 10px;
@@ -95,6 +100,7 @@ img{
     width: 5rem;
     height: 5rem;
     align-items: flex-start;
+    
 }
 
 .text, .translateText{
@@ -102,14 +108,28 @@ height: 20vh;
 width: 20vw;
 border: 2px solid rgb(156, 155, 155);
 border-radius: 10px;
+background-color: #fefefe;
+box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.5);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.text2,.translateText2{
+    height: 16vh;
+    width: 16vw;
+    overflow-wrap: break-word;
+    text-align: left;
 }
 .div{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    height: 18vh;
-    width: 5rem;
+    height: 20vh;
     margin-right: 15px;
+    border-radius: 10px;
+    background-color: #fefefe;
+    padding: 15px;
+    box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.5)
 }
