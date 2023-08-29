@@ -31,15 +31,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 54vw;
+    width: 75vw;
 }
 
 .upContain,.downContain{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 45vh;
-    width: 25vw;
+    height: 50vh;
+    width: 37vw;
     border: 1px solid black;
     border-radius: 10px;
     padding: 15px;
@@ -79,16 +79,19 @@ body{
 .turkDiv, .chooseDiv{
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     height: 22.5vh;
+    width: 30vw;
 }
-
+.turkDiv{
+    margin-bottom: 10px;
+}
 img{
     width: 5rem;
     height: 5rem;
 }
 
-.flag{
+.flag, .chooseFlag{
     width: 5rem;
     height: 5rem;
     align-items: flex-start;
@@ -96,6 +99,17 @@ img{
 
 .text, .translateText{
 height: 20vh;
+width: 20vw;
 border: 2px solid rgb(156, 155, 155);
 border-radius: 10px;
+}
+.div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 18vh;
+    width: 5rem;
+    margin-right: 15px;
 }
