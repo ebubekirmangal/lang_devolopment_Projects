@@ -4,15 +4,19 @@ const firstSec = document.getElementById("firstSection");
 const chooseText = document.querySelector(".chooseText2")
 const button = document.getElementById("but");
 const chooseFlag = document.querySelector(".chooseFlag")
-const div = document.querySelector(".div")
+const div1 = document.querySelector(".div1")
+const text = document.querySelector(".text2")
 
-// const getWord =async  (w,k)=> {
-//         const apikey = "trnsl.1.1.20180930T080756Z.753c49142579b043.b2798189b8760e7b357c9d23a8736ef0a54be481";
-//         const url = `https://translate.yandex.net/api/v1.5/tr.json/translate?key=${apikey}&text=${w}&lang=${k}`;
-//         const response = await fetch(url);
-//         const data = await response.json();
-//         chooseText.textContent = data; // Dikkat: data.text bir dizi içinde geliyor.
-//     }
+
+
+
+const getWord =async  (w,k)=> {
+        const apikey = "trnsl.1.1.20180930T080756Z.753c49142579b043.b2798189b8760e7b357c9d23a8736ef0a54be481";
+        const url = `https://translate.yandex.net/api/v1.5/tr.json/translate?key=${apikey}&text=${w}&lang=${k}`;
+        const response = await fetch(url);
+        const data = await response.json();
+        chooseText.textContent = data.text[0];
+    }
 
 
 addEventListener();
@@ -20,17 +24,22 @@ addEventListener();
 function addEventListener() {
     form.addEventListener("submit", translateWord);
     selectList.onchange = function () {
-        changeFlag()
+        changeFlag();
+        changeInfo();
     };
 }
 
 function translateWord(e) {
     
 
-    // const word = firstSec.value;
-    // const key = selectList.value;
+    const word = firstSec.value;
+    const key = selectList.value;
 
-    // getWord(word,key);
+    getWord(word,key);
+
+    
+
+    text.textContent = firstSec.value;
     
     firstSec.value = "";
     e.preventDefault();
@@ -66,13 +75,14 @@ const changeFlag = ()=>{
 
 const changeInfo = ()=>{
     const cc = selectList.value
+    div1.innerHTML = "";
     const infoDiv = document.createElement("div")
     infoDiv.classList.add("chooseInfo")
     infoDiv.innerHTML = langs[cc];
-    div.appendChild(infoDiv)
+    div1.appendChild(infoDiv)
 }
 window.onload = function () {
     changeFlag();
+    changeInfo();
 };
 
-changeInfo()
